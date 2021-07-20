@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+}
+ul{
+    padding-inline-start: 0;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+nav{
+    border-bottom:1px solid black;
+    box-shadow:2px 5px 5px gray;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+}
+
+.hamburger{
+    width: 35px;
+    height: 5px;
+    background-color: gray;
+    margin: 5px 0;
+}
+
+#hamburger{
+    margin:0 -130px 0 40px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul, .breadcrumb, .postBreadCrumb, .mainPancake{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    flex: 1;
+    align-self: center;
+}
+
+nav img{
+    height: 52px;
+    width: 140px;
+}
+
+nav form input, nav form button{
+    font-size: 17px;
+    padding: 15px;
+    border: 1px solid black;
+}
+nav form{
+    margin: 0 300px;
+}
+
+nav form input{
+border-right: none;
+}
+
+nav form button{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-left: none;
+    padding-bottom: 18px;
+}
+
+.breadcrumb li{ 
+    margin:9rem 1rem 0 0;
+    list-style: none;
+    position: static;
+}
+
+.breadcrumb li a{
+    font-size: .8em;
+    text-decoration: none;
+    font-weight: bold;
+    color: initial;
+}
+
+.postBreadCrumb li{
+    margin: 0 1rem 0 0;
+    list-style: none; 
+    border-right:2px solid black;
+    padding: 0 1rem 0 0;
+}
+.checked{
+    color: orange;
+}
+
+.profilePic{
+    display: flex;
+    flex-direction: row;
+}
+
+.profilePic p{
+    padding: 20px;
+}
+
+.pancakeImg img{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+
+.mainPancake img{
+    width: 600px;
+    height: 600px;
+    margin: 10px;
+}
+
+#proPic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.mainPancake ul{
+    border: 1px solid black;
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    line-height: 2rem;
+    padding: 20px;
+}
+
+.leftContainerButton{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftContainerButton button{
+    margin: 10px;
+    background-color: white;
+    padding: 25px 5px;
+    border: 1px solid red;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.leftContainerButton button:hover, .ingridents-list+button:hover, #adjustButton:hover, .last-button button:hover{
+    background-color: rgb(255, 130, 108);
+}
+
+.ingridents-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.ingridents-top div{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+    height: max-content;
+}
+
+.ingridents-top h3{
+    flex-grow: 2;
+}
+
+.ingridents-top p{
+    margin: auto 10px;
+}
+
+.ingridents-top div button{
+    border: 0;
+    font-size: 1.5rem;
+}
+
+#adjustButton{
+    height: max-content;    
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 5px; 
+    background-color: white;
+    border: 2px solid #d54215;
+    border-radius: 5px;
+}
+
+.ingridents-list{
+    list-style: none;
+    line-height: 3rem;
+}
+
+.ingridents-list + button{
+    background-color: white;
+    border: 2px solid #d54215;
+    padding: 1rem;  
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.last-button{
+    display: flex;
+    justify-content: center;
+}
+.last-button button{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #d54215;
+}
