@@ -1,0 +1,131 @@
+/* resetting webpage */
+*{
+    margin:0;
+    padding: 0;
+    color: #B2ABF2;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat/Montserrat-Light.ttf);
+}
+
+body{
+    background-color: #10152b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.container{
+    width: 90%;
+}
+
+nav{
+    border-bottom: solid 1px white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+#userphoto{
+    width: 100%;
+    background-color: #310A31;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+h1{
+    color: #7EE081;
+}
+
+.introBox{
+    background-color: #2c3357;
+    background-image: linear-gradient(to left, #10152b 20%,#2c3357);
+    width: max-content;
+    height: max-content;
+    padding: 1rem;
+}
+
+.introbox p{
+    color: #9cdcfe;
+}
+
+.introBox span{
+    color: #ce9178;
+}
+
+.float-box .introBox:last-child{
+    margin-top: 2rem; 
+}
+.float-box{
+    display: flex;
+    justify-content:space-between ;
+}
+
+#comment{
+    color: #a7ce9b;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience .introbox{
+    flex-wrap: nowrap;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+div.experience>div.introBox:nth-child(2){
+    margin: 2rem .5rem 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+#userPhoto{
+    background-color: transparent;
+    width: 50%;
+}
+.body{
+    display: flex;
+}
+
+.float-box .introBox:last-child{
+    margin-top: 6rem;
+}
+
+
+    
+}
